@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vh;
+
+}
+
+
+header{
+    font-size: large;
+    display: grid;
+    justify-content: center;
+}
+
+header,h2{
+    color: rgb(11, 11, 179);
+}
+
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+.Titulo{
+    grid-area: Titulo;
+}
+.Presentacion{
+    grid-area: Presentacion;
+}
+.Mision{
+    grid-area: Mision;
+}
+.ad{
+    grid-area: ad;
+}
+.galeriaGrid{
+    grid-area: galeria;
+}
+.videoGrid{
+    grid-area: video;
+}
+footer{
+    grid-area: footer;
+}
+.intro{
+    grid-area: intro;
+}
+.tit{
+    grid-area: tit;
+}
+.pep{
+    grid-area: pep;
+}
+.imagen2{
+    grid-area: imagen2;
+}
+.num2{
+    grid-area: num2;
+}
+    .grillaGeneral{
+        background-color: #6C7F98;
+        margin-bottom: 1,5em;
+        display: grid;
+        margin: 0;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "Titulo"
+        "galeria"
+        "Presentacion"
+        "Mision"
+        "ad"
+        "video"
+        "footer";
+        
+    }
+
+
+    nav ul li{
+        list-style-type: none;
+        color: white;
+    }
+    nav{
+        background-color: #fff
+    }
+    footer{
+        background-color: #aab7b8;
+    }
+    .Titulo{
+        color: rgb(0, 0, 123);
+        padding-top: 20px;
+        font-size:50px;
+    }
+    .Presentacion{
+        margin-bottom: 40px;
+        font-family: 'Athiti', sans-serif;
+    }
+    .Mision{
+        margin: 5px;
+        font-family: 'Athiti', sans-serif;
+        text-align: justify;
+        margin-top: 120px;
+        margin-right: 20px;
+    }
+    .titu2{
+        text-align: center;
+    }
+    .videoGrid{
+        background-color: #c2c2c2;
+    }
+    .redes{
+        list-style-type: none;
+        padding: 0px;        
+        font-size: small;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin-top: 15px;
+    }
+    .logos{
+        padding: 25px;        
+        font-size: small;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+
+    .padre{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        gap: 15px;
+        padding-top: 30px;
+    }
+
+    .padre2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        gap: 15px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .intro{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to right, rgba(192, 175, 175, 0.5),rgba(192 175 175 / 0.5)),url(../img/1655530334863.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .intro .intro-texto{
+        color: rgb(232, 25, 25);
+        text-align: center;
+        width: 50%;
+    }
+    .tit{
+        color: white;
+        font-size: 40px;
+        padding-top: 70px;
+    }
+    .pep{
+        margin-top: 70px;
+    }
+    .grillatexto{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "tit tit tit"
+        ". . ."
+        ". pep .";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    h3{
+        background-color: #fff;
+        border: #fff 5px solid;
+        border-radius: 20px;
+        color: rgb(11, 11, 179);
+    }
+    .imagen2{
+        margin-top: 26px;
+    }
+    .grillasegun{
+        width: 100vw;
+        height: 75vh;
+        display: grid;
+        grid-template-areas: 
+        "imagen2 Mision";
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .num2{
+        background-color: #e0e0e0;
+    }
+@media (min-width:500px){
+    .grillaGeneral{
+        background-color: #fff;
+        margin: 0;
+        grid-template-areas: 
+        "header header"
+        "nav nav "
+        "Titulo Titulo"
+        "Presentacion Presentacion"
+        "galeria galeria"
+        "Mision Mision"
+        "video video"
+        "footer footer";
+        grid-template-columns: 1fr 3fr;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    } 
+    footer{
+        margin-top: 0;
+    }
+
+}
+@media (min-width:768px){
+    .grillaGeneral{
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "Titulo Titulo Titulo"
+        "Presentacion Presentacion Presentacion"
+        "intro intro intro"
+        "Mision Mision Mision"
+        "video video video"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 2fr;
+        margin-bottom: 1.5em;
+    }
+
+    nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: small;
+    }
+    
+}
+
+@media (min-width:1024px){
+    .grillaGeneral{
+        grid-template-areas: 
+        "nav nav nav"
+        "intro intro intro"
+        "num2 num2 num2"      
+        "video video video"
+        "footer footer footer";
+    }
+    
+}
