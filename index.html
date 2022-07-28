@@ -9,106 +9,102 @@
     <title>bootstrap</title>
 </head>
 <body>
-    <!--Inicio del header-->
-    <div class="grillaGeneral">
-        <!---
-        <header>Ingenieria Para Chile</header>
-        -->
-        <nav>
-            <ul>
-                <li>
-                    <img class="fotoipch" src="./img/Captura de Pantalla 2022-06-26 a la(s) 19.32.38.png" width="100" height="100">
-                </li>
-                <li class="Primero"> 
-                    <a href="./index.html">INICIO</a> 
-                </li>
-                <li> 
-                    <a href="../secciones/quienesSomos.html">QUIENES SOMOS</a>
-                </li>
-                <li> 
-                    <a href="../secciones/proyectosRealizados.html">PROYECTOS REALIZADOS</a>
-                </li>
-                <li>
-                    <a href="../desafio1/secciones/socio.html">HAZTE SOCIO</a>
-                </li>
-                <li>
-                    <a href="../secciones/contacto.html">CONTACTO</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/iparachile/?hl=es" target="_Blank">INSTAGRAM</a>
-                </li>
-            </ul>
-        </nav>
-    <!--Fin del header-->
-        
-        <div class="intro">
-            <div class="grillatexto">
-                <div class="tit">
-                    <h1>Ingenieria Para Chile</h1>
-                </div>
-                <div class="pep">
-                    <h3>Llevando la escuela al servicio del pais</h3>
-                </div>
-            </div>              
-        </div>
-
-
-        <!--
-
-        -->
-        <section class="videoGrid">
-            <section class="padre2">
-                <div class="Videoinge">
-                    <iframe width="700" height="500" src="https://www.youtube.com/embed/bF26EN3l3Qg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </section>
-        </section>
-        <!--
-
-        -->
-        <div class="num2">
-            <div class="grillasegun">
-                <section class="imagen2 ">
-                    <section class="container-fluid">
-                        <section class="row justify-content-start">
-                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="./img/la2.jpg" class="d-block " alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./img/1658849867164-3.jpg" class="d-block " alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./img/1658849867174-2.jpg" class="d-block " alt="...">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </section>
-                    </section>
-                </section>
-                <article class="Mision">
-                    <h2 class="titu2">Nuestra mision</h2>
-                    <h2>Construir ciudades justas, humanas e inclusivas donde todas las familias accedan a una vivienda digna donde habitar. Formar jóvenes voluntarios y voluntarias a través del vínculo y el trabajo en conjunto con familias de campamentos y/o  hacinamiento.</h2>
-                </article>
+    <!--Inicio header-->
+    <header>
+        <div class="navegacion">
+            <div class="grillanavegacion">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <li>
+                            <img class="fotoipch" src="./img/Captura de Pantalla 2022-06-26 a la(s) 19.32.38.png" width="100" height="100">
+                        </li>
+                        <a class="navbar-brand px-4 nombre" href="#">IPCh</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse menuuu" id="navbarNavDarkDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown opciones">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Menu
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark .px-3" aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="./index.html">INICIO</a></li>
+                                        <li><a class="dropdown-item" href="./secciones/quienesSomos.html">QUIENES SOMOS</a></li>
+                                        <li><a class="dropdown-item" href="./secciones/proyectosRealizados.html">PROYECTOS REALIZADOS</a></li>
+                                        <li><a class="dropdown-item" href="./secciones/socio.html">HAZTE SOCIO</a></li>
+                                        <li><a class="dropdown-item" href="./secciones/contacto.html">CONTACTO</a></li>
+                                        <li><a class="dropdown-item" href="https://www.instagram.com/iparachile/?hl=es">INSTAGRAM</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <h1 class="titulo">Ingenieria Para Chile</h1>
+                    <!--inicio segundo boton-->
+                        <div class="dropdown pe-4 sesion">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                INICIAR SESION
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="./pages/form.html">Inicia sesion</a></li>
+                            <li><a class="dropdown-item" href="#">Registrate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
-    <!--Se conecta el footer con el boton en la barra de navegacion-->
-    <footer>
         
+    </header>
+    <!--Inicio Carrusel-->
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active imagen">
+                    <img src="./img/1655530334863-4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item imagen">
+                    <img src="./img/1659016721052-3.jpg" class="d-block w-100" alt="...">
+                </div>    
+                <div class="carousel-item imagen">
+                    <img src="./img/1658849867174-3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!--Contenido mision-->
+    <div class="contenido">
+        <div class="grillacontenido">
+            <div class="imagencontenido">
+                <img src="./img/la2.jpg" alt="">
+            </div>
+            <article class="Mision">
+                <h2 class="titmision">Nuestra mision</h2>
+                <h2 class="contmision">Construir ciudades justas, humanas e inclusivas donde todas las familias accedan a una vivienda digna donde habitar. Formar jóvenes voluntarios y voluntarias a través del vínculo y el trabajo en conjunto con familias de campamentos y/o  hacinamiento.</h2>
+            </article>
+        </div>
+    </div>
+    
+    <!--Inicio video-->
+    <section class="video"> 
+        <div class="Videoinge">
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/bF26EN3l3Qg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <footer>
         <ul class="redes">
             <li class="abajo2"> 
                 <a href="">POLITICAS DE PRIVACIDAD</a>
@@ -135,8 +131,7 @@
             </div>
         </ul>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

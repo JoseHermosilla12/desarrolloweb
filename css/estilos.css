@@ -1,327 +1,280 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200&display=swap');
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    text-align: center;
-    font-family: 'Bebas Neue', cursive;
-    font-weight: bolder;
+header{
+    width: 100%;
+}
+h1{
+    height: 30px;
     display: flex;
-    flex-direction: column;
-    min-width: 100vh;
-
-}
-
-
-header{
-    font-size: large;
-    display: grid;
     justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.navegacion{
+    display: flex;
 }
 
-header,h2{
-    color: rgb(11, 11, 179);
+/*animacion imagenes carrusel*/
+.imagen{
+	-webkit-animation: kenburns-bottom-right 5s ease-out both;
+	animation: kenburns-bottom-right 5s ease-out both;
 }
-
-header{
-    grid-area: header;
+@-webkit-keyframes kenburns-bottom-right {
+    0% {
+    -webkit-transform: scale(1) translate(0, 0);
+        transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 84%;
+        transform-origin: 84% 84%;
+    }
+    100% {
+    -webkit-transform: scale(1.25) translate(20px, 15px);
+        transform: scale(1.25) translate(20px, 15px);
+    -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+    }
 }
-nav{
-    grid-area: nav;
+@keyframes kenburns-bottom-right {
+    0% {
+    -webkit-transform: scale(1) translate(0, 0);
+        transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 84%;
+        transform-origin: 84% 84%;
+    }
+    100% {
+    -webkit-transform: scale(1.25) translate(20px, 15px);
+        transform: scale(1.25) translate(20px, 15px);
+    -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+    }
 }
-.Titulo{
-    grid-area: Titulo;
+/*espacio dedicado a contenido*/
+.contenido{
+    display: flex;
+    background-color: #e0e0e0;
+    padding: 20px;
 }
-.Presentacion{
-    grid-area: Presentacion;
+.imagencontenido{
+    grid-area: imagencontenido;
 }
 .Mision{
-    grid-area: Mision;
+    grid-area: mision;
 }
-.form{
-    grid-area: form;
-}
-.ad{
-    grid-area: ad;
-}
-.galeriaGrid{
-    grid-area: galeria;
-}
-.videoGrid{
-    grid-area: video;
-}
-footer{
-    grid-area: footer;
-}
-.intro{
-    grid-area: intro;
-}
-.tit{
-    grid-area: tit;
-}
-.pep{
-    grid-area: pep;
-}
-.imagen2{
-    grid-area: imagen2;
-}
-.imagen3{
-    grid-area: imagen3;
-}
-.num2{
-    grid-area: num2;
-}
-.carrusel{
-    grid-area: carrusel;
-}
-.motivacion{
-    grid-area: motivacion;
-}
-    .grillaGeneral{
-        background-color: #6C7F98;
-        margin-bottom: 1,5em;
-        display: grid;
-        margin: 0;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "Titulo"
-        "galeria"
-        "Presentacion"
-        "Mision"
-        "ad"
-        "video"
-        "footer";
-        
-    }
 
-
-    nav ul li{
-        list-style-type: none;
-        color: white;
-    }
-    nav{
-        background-color: #fff
-    }
-    footer{
-        background-color: #aab7b8;
-    }
-    .Titulo{
-        color: rgb(0, 0, 123);
-        padding-top: 20px;
-        font-size:50px;
-    }
-    .Presentacion{
-        margin-bottom: 40px;
-        font-family: 'Athiti', sans-serif;
-    }
-    .Mision{
-        margin: 5px;
-        font-family: 'Athiti', sans-serif;
-        text-align: justify;
-        margin-top: 120px;
-        margin-right: 20px;
-    }
-    .titu2{
-        text-align: center;
-    }
-    .videoGrid{
-        background-color: #c2c2c2;
-    }
-    .redes{
-        list-style-type: none;
-        padding: 0px;        
-        font-size: small;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column-reverse;
-        margin-top: 15px;
-    }
-    .logos{
-        padding: 25px;        
-        font-size: small;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-        margin-top: 15px;
-    }
-
-    .padre{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        justify-items: center;
-        gap: 15px;
-        padding-top: 30px;
-    }
-
-    .padre2{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        justify-items: center;
-        gap: 15px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-    .intro{
-        width: 100vw;
-        height: 100vh;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(to right, rgba(192, 175, 175, 0.5),rgba(192 175 175 / 0.5)),url(../img/1655530334863.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-    .intro .intro-texto{
-        color: rgb(232, 25, 25);
-        text-align: center;
-        width: 50%;
-    }
-    .tit{
-        color: white;
-        font-size: 40px;
-        padding-top: 70px;
-    }
-    .pep{
-        margin-top: 70px;
-    }
-    .grillatexto{
-        width: 100vw;
-        height: 100vh;
-        display: grid;
-        grid-template-areas: 
-        "tit tit tit"
-        ". . ."
-        ". pep .";
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    h3{
-        background-color: #fff;
-        border: #fff 5px solid;
-        border-radius: 20px;
-        color: rgb(11, 11, 179);
-    }
-    .imagen2{
-        margin-top: 26px;
-        margin-left: 60px;
-    }
-
-    img:hover{
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    }
-    .grillasegun{
-        width: 100vw;
-        height: 75vh;
-        display: grid;
-        grid-template-areas: 
-        "imagen2 Mision";
-        grid-template-columns: 1fr 1fr;
-        
-    }
-    .grillasocio2{
-        width: 100vw;
-        height: 75vh;
-        display: grid;
-        grid-template-areas: 
-        "imagen3 Mision";
-        grid-template-columns: 1fr 1fr;
-        
-    }
-    .num2{
-        background-color: #e0e0e0;
-    }
-    .form{
-        background-color: #e0e0e0;
-    }
 @media (min-width:500px){
-    .grillaGeneral{
-        background-color: #fff;
-        margin: 0;
+    .grillacontenido{
+        display: grid;
         grid-template-areas: 
-        "header header"
-        "nav nav "
-        "Titulo Titulo"
-        "Presentacion Presentacion"
-        "galeria galeria"
-        "Mision Mision"
-        "video video"
-        "footer footer";
-        grid-template-columns: 1fr 3fr;
+        "imagencontenido"
+        "mision";
+        grid-template-columns: 1fr;
     }
-    .grillasocio{
-        grid-template-areas: 
-        "nav nav"
-        "intro intro"
-        "num2 num2"
-        "video video"
-        "footer footer";
-    }
-    nav ul{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    } 
-    footer{
-        margin-top: 0;
-    }
-
 }
 @media (min-width:768px){
-    .grillaGeneral{
+    .grillacontenido{
+        display: grid;
         grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "Titulo Titulo Titulo"
-        "Presentacion Presentacion Presentacion"
-        "intro intro intro"
-        "carrusel carrusel carrusel"
-        "Mision Mision Mision"
-        "video video video"
-        "footer footer footer";
-        grid-template-columns: 1fr 1fr 2fr;
-        margin-bottom: 1.5em;
+        "mision imagencontenido";
+        grid-template-columns: 1fr 1fr;
     }
-    .grillasocio{
-        grid-template-areas: 
-        "nav nav nav"
-        "form form form"
-        "motivacion motivacion motivacion"
-        "footer footer footer";
-        grid-template-columns: 1fr 1fr 2fr;;
-    }
-
-    nav ul{
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        font-size: small;
-    }
-    
+}
+.imagencontenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titmision{
+    display: flex;
+    justify-content: center;
+}
+.contmision{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding-top: 30px;
+}
+/*espacio dedicado a video*/
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #c2c2c2;
 }
 
-@media (min-width:1024px){
-    .grillaGeneral{
-        grid-template-areas: 
-        "nav nav nav"
-        "intro intro intro"
-        "num2 num2 num2"      
-        "video video video"
-        "footer footer footer";
-    }
+/*espacio dedicado a footer*/
+footer{
+    background-color: #aab7b8;
+}
+.redes{
+    list-style-type: none;
+    padding: 0px;        
+    font-size: small;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column-reverse;
+    
+}
+.logos{
+    padding: 25px;        
+    font-size: small;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+/*zona dedicada a form*/
+.form{
+    background-color: #aab7b8;
+}
+.form2{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin: 346px;
+}
+
+/*zona dedicada a seccion socio*/
+
+.form3{
+    padding-top: 10px;
+    background-color: #e0e0e0;
+}
+.imagenmotivacion{
+    grid-area: imagenmotivacion;
+}
+.misionmotivacion{
+    grid-area: misionmotivacion;
+}
+@media (min-width:500px){
     .grillasocio{
+        display: grid;
         grid-template-areas: 
-        "nav nav nav"
-        "form form form"
-        "motivacion motivacion motivacion"
-        "footer footer footer";
+        "imagenmotivacion"
+        "misionmotivacion";
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width:768px){
+    .grillasocio{
+        display: grid;
+        grid-template-areas: 
+        "imagenmotivacion misionmotivacion";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.grillasocio{
+    padding: 20px;
+}
+.titumotivacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textomotivacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.imagenmotivacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.misionmotivacion{
+    padding: 70px;
+}
+
+/*zona dedicada a quienes somos*/
+.nosotros{
+    background-color: #e0e0e0;
+}
+.sobrenosotros{
+    grid-area: sobrenosotros;
+}
+.quienessomos{
+    grid-area: quienessomos;
+}
+.titnosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+.textonosotros{
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    font-size: 30px;
+    padding: 10px;
+}
+@media (min-width:500px){
+    .grillanosotros{
+        display: grid;
+        grid-template-areas: 
+        "sobrenosotros"
+        "quienessomos";
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width:768px){
+    .grillanosotros{
+        display: grid;
+        grid-template-areas: 
+        "sobrenosotros quienessomos";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*zona destinada a contactos*/
+.ubicacion{
+    grid-area: ubicacion;
+}
+.indicaciones{
+    grid-area: indicaciones;
+}
+.contacto{
+    background-color: white;
+    padding: 20px;
+}
+.titulocontacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indicaciones{
+    padding-top: 40px;
+}
+
+.contactos{
+    padding: 50px;
+}
+
+@media (min-width:500px){
+    .grillacontacto{
+        display: grid;
+        grid-template-areas: 
+        "ubicacion"
+        "indicaciones";
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width:768px){
+    .grillacontacto{
+        display: grid;
+        grid-template-areas: 
+        "indicaciones ubicacion";
+        grid-template-columns: 1fr 1fr;
     }
 }
