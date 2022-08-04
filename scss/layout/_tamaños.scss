@@ -1,0 +1,90 @@
+
+.newsletter{
+    padding: 40px;
+}
+
+@media (min-width:500px){
+    .grillacontenido{
+        display: grid;
+        grid-template-areas: 
+        "imagencontenido"
+        "mision";
+        grid-template-columns: 1fr;
+    }
+    .grillanewsletter{
+        display: grid;
+        grid-template-areas: 
+        "suscripcion suscripcion"
+        "nombres correos";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:768px){
+    .grillacontenido{
+        display: grid;
+        grid-template-areas: 
+        "mision imagencontenido";
+        grid-template-columns: 1fr 1fr;
+    }
+    .grillanewsletter{
+        display: grid;
+        grid-template-areas: 
+        "suscripcion formulario";
+        grid-template-columns: 2fr 2fr;
+    }
+}
+/*Tamaños de quienes somos*/
+@media (min-width:500px){
+    .grillanosotros{
+        display: grid;
+        grid-template-areas: 
+        "sobrenosotros"
+        "quienessomos";
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width:768px){
+    .grillanosotros{
+        display: grid;
+        grid-template-areas: 
+        "sobrenosotros quienessomos";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*Tamaños de contacto*/
+@media (min-width:500px){
+    .grillacontacto{
+        display: grid;
+        grid-template-areas: 
+        "ubicacion"
+        "indicaciones";
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width:768px){
+    .grillacontacto{
+        display: grid;
+        grid-template-areas: 
+        "indicaciones ubicacion";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/*Tamaño destinado a video proyeectos*/
+@media (min-width:500px){
+    .grillaproyecto1{
+        display: grid;
+        grid-template-areas: 
+        "videooo"
+        "proyecto1";
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width:768px){
+    .grillaproyecto1{
+        display: grid;
+        grid-template-areas: 
+        "proyecto1 videooo";
+        grid-template-columns: 1fr 1fr;
+    }
+}

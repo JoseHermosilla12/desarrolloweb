@@ -1,0 +1,43 @@
+/*grids de contenidos*/
+.imagencontenido{
+    grid-area: imagencontenido;
+}
+.Mision{
+    grid-area: mision;
+}
+/*Grids de suscripcion*/
+.suscripcion{
+    grid-area: suscripcion;
+}
+.nombres{
+    grid-area: nombres;
+}
+.correos{
+    grid-area: correos;
+}
+.formulario{
+    grid-area: formulario;
+}
+/*Zona de grids quienes somos*/
+.sobrenosotros{
+    grid-area: sobrenosotros;
+}
+.quienessomos{
+    grid-area: quienessomos;
+}
+
+/*zona destinada a contactos*/
+.ubicacion{
+    grid-area: ubicacion;
+}
+.indicaciones{
+    grid-area: indicaciones;
+}
+
+/*zona destinada a video de proyectos*/
+.videooo{
+    grid-area: videooo;
+}
+.proyecto1{
+    grid-area: proyecto1;
+}
