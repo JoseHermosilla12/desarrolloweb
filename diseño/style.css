@@ -1,0 +1,434 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@200&family=Roboto:wght@300&display=swap");
+.formulario {
+  width: 20px;
+  padding-left: 70px;
+}
+
+.nombres {
+  border: none;
+}
+
+.correos {
+  border: none;
+}
+
+.suscribete {
+  background-color: rgb(45, 67, 213);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.suscripcion {
+  padding-left: 70px;
+  font-size: 30px;
+}
+
+/*grids de contenidos*/
+.imagencontenido {
+  grid-area: imagencontenido;
+}
+
+.Mision {
+  grid-area: mision;
+}
+
+/*Grids de suscripcion*/
+.suscripcion {
+  grid-area: suscripcion;
+}
+
+.nombres {
+  grid-area: nombres;
+}
+
+.correos {
+  grid-area: correos;
+}
+
+.formulario {
+  grid-area: formulario;
+}
+
+/*Zona de grids quienes somos*/
+.sobrenosotros {
+  grid-area: sobrenosotros;
+}
+
+.quienessomos {
+  grid-area: quienessomos;
+}
+
+/*zona destinada a contactos*/
+.ubicacion {
+  grid-area: ubicacion;
+}
+
+.indicaciones {
+  grid-area: indicaciones;
+}
+
+/*zona destinada a video de proyectos*/
+.videooo {
+  grid-area: videooo;
+}
+
+.proyecto1 {
+  grid-area: proyecto1;
+}
+
+/*zona destinada a footer*/
+.redes {
+  grid-area: redes;
+}
+
+.newsletter {
+  grid-area: newsletter;
+}
+
+.newsletter {
+  padding: 40px;
+}
+
+@media (min-width: 500px) {
+  .grillacontenido {
+    display: grid;
+    grid-template-areas: "imagencontenido" "mision";
+    grid-template-columns: 1fr;
+  }
+  .grillanewsletter {
+    display: grid;
+    grid-template-areas: "suscripcion suscripcion" "nombres correos";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .grillacontenido {
+    display: grid;
+    grid-template-areas: "mision imagencontenido";
+    grid-template-columns: 1fr 1fr;
+  }
+  .grillanewsletter {
+    display: grid;
+    grid-template-areas: "suscripcion formulario";
+    grid-template-columns: 2fr 2fr;
+  }
+}
+/*zona destinada a footer*/
+@media (min-width: 500px) {
+  .grillafooter {
+    display: grid;
+    grid-template-areas: "redes newsletter";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .grillafooter {
+    display: grid;
+    grid-template-areas: "newsletter" "redes";
+    grid-template-columns: 1fr;
+  }
+}
+/*Tamaños de quienes somos*/
+@media (min-width: 500px) {
+  .grillanosotros {
+    display: grid;
+    grid-template-areas: "sobrenosotros" "quienessomos";
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .grillanosotros {
+    display: grid;
+    grid-template-areas: "sobrenosotros quienessomos";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*Tamaños de contacto*/
+@media (min-width: 500px) {
+  .grillacontacto {
+    display: grid;
+    grid-template-areas: "ubicacion" "indicaciones";
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .grillacontacto {
+    display: grid;
+    grid-template-areas: "indicaciones ubicacion";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*Tamaño destinado a video proyeectos*/
+@media (min-width: 500px) {
+  .grillaproyecto1 {
+    display: grid;
+    grid-template-areas: "videooo" "proyecto1";
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .grillaproyecto1 {
+    display: grid;
+    grid-template-areas: "proyecto1 videooo";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+
+.imagen {
+  -webkit-animation: kenburns-bottom-right 5s ease-out both;
+  animation: kenburns-bottom-right 5s ease-out both;
+}
+
+@-webkit-keyframes kenburns-bottom-right {
+  0% {
+    transform: scale(1) translate(0, 0);
+    transform-origin: 84% 84%;
+  }
+  100% {
+    transform: scale(1.25) translate(20px, 15px);
+    transform-origin: right bottom;
+  }
+}
+@keyframes kenburns-bottom-right {
+  0% {
+    transform: scale(1) translate(0, 0);
+    transform-origin: 84% 84%;
+  }
+  100% {
+    transform: scale(1.25) translate(20px, 15px);
+    transform-origin: right bottom;
+  }
+}
+.contenido {
+  display: flex;
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+.contenido .imagencontenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+}
+
+.contenido {
+  display: flex;
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+.contenido .titmision {
+  display: flex;
+  justify-content: center;
+}
+
+.contenido {
+  display: flex;
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+.contenido .contmision {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  padding-top: 30px;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #c2c2c2;
+}
+
+.newsletter {
+  display: grid;
+}
+
+.formulario {
+  display: flex;
+}
+
+footer {
+  background-color: #aab7b8;
+}
+footer .redes {
+  list-style-type: none;
+  padding: 0px;
+  font-size: small;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+footer .redes .logos {
+  padding: 25px;
+  font-size: small;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+/*Zona dedicada a quienes somos*/
+.nosotros {
+  background-color: #e0e0e0;
+}
+.nosotros .titnosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
+
+.nosotros .textonosotros {
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+  font-size: 30px;
+  padding: 10px;
+}
+
+/*zona dedicada a contacto*/
+.contacto {
+  background-color: white;
+  padding: 20px;
+}
+.contacto .indicaciones {
+  padding-top: 40px;
+}
+.contacto .indicaciones .titulocontacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto .indicaciones .contactos {
+  padding: 50px;
+}
+
+/*zona para video de proyectos*/
+.proyectos {
+  background-color: #c2c2c2;
+  padding: 50px;
+  display: flex;
+}
+.proyectos .videooo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+}
+.proyectos .proyecto1 {
+  padding-top: 30px;
+}
+.proyectos .proyecto1 .titproyecto1 {
+  display: flex;
+  justify-content: center;
+}
+.proyectos .proyecto1 .contproyecto1 {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  padding-top: 30px;
+}
+
+.newsletter {
+  padding: 40px;
+}
+
+@media (min-width: 500px) {
+  .grillacontenido {
+    display: grid;
+    grid-template-areas: "imagencontenido" "mision";
+    grid-template-columns: 1fr;
+  }
+  .grillanewsletter {
+    display: grid;
+    grid-template-areas: "suscripcion suscripcion" "nombres correos";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .grillacontenido {
+    display: grid;
+    grid-template-areas: "mision imagencontenido";
+    grid-template-columns: 1fr 1fr;
+  }
+  .grillanewsletter {
+    display: grid;
+    grid-template-areas: "suscripcion formulario";
+    grid-template-columns: 2fr 2fr;
+  }
+}
+/*zona destinada a footer*/
+@media (min-width: 500px) {
+  .grillafooter {
+    display: grid;
+    grid-template-areas: "redes newsletter";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .grillafooter {
+    display: grid;
+    grid-template-areas: "newsletter" "redes";
+    grid-template-columns: 1fr;
+  }
+}
+/*Tamaños de quienes somos*/
+@media (min-width: 500px) {
+  .grillanosotros {
+    display: grid;
+    grid-template-areas: "sobrenosotros" "quienessomos";
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .grillanosotros {
+    display: grid;
+    grid-template-areas: "sobrenosotros quienessomos";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*Tamaños de contacto*/
+@media (min-width: 500px) {
+  .grillacontacto {
+    display: grid;
+    grid-template-areas: "ubicacion" "indicaciones";
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .grillacontacto {
+    display: grid;
+    grid-template-areas: "indicaciones ubicacion";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*Tamaño destinado a video proyeectos*/
+@media (min-width: 500px) {
+  .grillaproyecto1 {
+    display: grid;
+    grid-template-areas: "videooo" "proyecto1";
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .grillaproyecto1 {
+    display: grid;
+    grid-template-areas: "proyecto1 videooo";
+    grid-template-columns: 1fr 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */

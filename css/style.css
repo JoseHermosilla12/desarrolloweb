@@ -27,18 +27,16 @@
 .Mision {
   grid-area: mision; }
 
-/*Grids de suscripcion*/
-.suscripcion {
-  grid-area: suscripcion; }
+/*zona dedicada a video*/
+.Videoinge {
+  grid-area: videoinge; }
 
+/*Grids de suscripcion*/
 .nombres {
   grid-area: nombres; }
 
 .correos {
   grid-area: correos; }
-
-.formulario {
-  grid-area: formulario; }
 
 /*Zona de grids quienes somos*/
 .sobrenosotros {
@@ -61,28 +59,43 @@
 .proyecto1 {
   grid-area: proyecto1; }
 
+.videoooo {
+  grid-area: videoooo; }
+
+.proyecto2 {
+  grid-area: proyecto2; }
+
+/*zona destinada a footer*/
+.redes {
+  grid-area: redes; }
+
 .newsletter {
-  padding: 40px; }
+  grid-area: newsletter; }
 
 @media (min-width: 500px) {
   .grillacontenido {
     display: grid;
     grid-template-areas: "imagencontenido" "mision";
-    grid-template-columns: 1fr; }
-  .grillanewsletter {
-    display: grid;
-    grid-template-areas: "suscripcion suscripcion" "nombres correos";
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr; } }
 
 @media (min-width: 768px) {
   .grillacontenido {
     display: grid;
     grid-template-areas: "mision imagencontenido";
-    grid-template-columns: 1fr 1fr; }
-  .grillanewsletter {
+    grid-template-columns: 1fr 1fr; } }
+
+/*zona destinada a footer*/
+@media (min-width: 500px) {
+  .grillafooter {
     display: grid;
-    grid-template-areas: "suscripcion formulario";
-    grid-template-columns: 2fr 2fr; } }
+    grid-template-areas: "newsletter" "redes";
+    grid-template-columns: 1fr; } }
+
+@media (min-width: 768px) {
+  .grillafooter {
+    display: grid;
+    grid-template-areas: "redes newsletter";
+    grid-template-columns: 1fr 1fr; } }
 
 /*Tamaños de quienes somos*/
 @media (min-width: 500px) {
@@ -115,12 +128,20 @@
   .grillaproyecto1 {
     display: grid;
     grid-template-areas: "videooo" "proyecto1";
+    grid-template-columns: 1fr; }
+  .grillaproyecto2 {
+    display: grid;
+    grid-template-areas: "videoooo" "proyecto2";
     grid-template-columns: 1fr; } }
 
 @media (min-width: 768px) {
   .grillaproyecto1 {
     display: grid;
     grid-template-areas: "proyecto1 videooo";
+    grid-template-columns: 3fr 2fr; }
+  .grillaproyecto2 {
+    display: grid;
+    grid-template-areas: "videoooo proyecto2";
     grid-template-columns: 1fr 1fr; } }
 
 * {
@@ -130,16 +151,6 @@
 
 header {
   width: 100%; }
-
-.navegacion {
-  /*display: flex;*/ }
-  .navegacion .titulo {
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    padding-left: 50px; }
 
 .imagen {
   -webkit-animation: kenburns-bottom-right 5s ease-out both;
@@ -172,25 +183,18 @@ header {
 .contenido {
   display: flex;
   background-color: #e0e0e0;
-  padding: 20px; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
   .contenido .imagencontenido {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 40px; }
-
-.contenido {
-  display: flex;
-  background-color: #e0e0e0;
-  padding: 20px; }
+    /*padding-left: 40px; */ }
+  .contenido .Mision {
+    padding: 20px; }
   .contenido .titmision {
     display: flex;
     justify-content: center; }
-
-.contenido {
-  display: flex;
-  background-color: #e0e0e0;
-  padding: 20px; }
   .contenido .contmision {
     display: flex;
     justify-content: center;
@@ -204,30 +208,46 @@ header {
   padding: 20px;
   background-color: #c2c2c2; }
 
-.newsletter {
-  display: grid; }
-
-.formulario {
-  display: flex; }
-
+/*zona destinada a footer*/
 footer {
   background-color: #aab7b8; }
   footer .redes {
     list-style-type: none;
-    padding: 0px;
+    margin-top: 20px;
     font-size: small;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column-reverse; }
+    flex-direction: column; }
     footer .redes .logos {
-      padding: 25px;
-      font-size: small;
+      padding: 15px;
       display: flex;
       justify-content: space-around;
-      align-items: center;
-      flex-direction: row;
-      margin-top: 15px; }
+      /*flex-direction: row;*/ }
+    footer .redes .prelogos {
+      display: flex; }
+      footer .redes .prelogos .nombrenfooter {
+        padding-top: 20px;
+        padding-left: 15px; }
+
+.newsletter {
+  padding: 40px; }
+  .newsletter .suscripcion {
+    display: flex;
+    justify-content: center; }
+  .newsletter .formulario {
+    display: flex;
+    align-items: center; }
+
+hr {
+  color: #2deff2; }
+
+.enlaces {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 10px;
+  font-size: 10px; }
 
 /*Zona dedicada a quienes somos*/
 .nosotros {
@@ -248,9 +268,18 @@ footer {
 /*zona dedicada a contacto*/
 .contacto {
   background-color: white;
-  padding: 20px; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .contacto .ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .contacto .indicaciones {
-    padding-top: 40px; }
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
     .contacto .indicaciones .titulocontacto {
       display: flex;
       justify-content: center;
@@ -259,48 +288,77 @@ footer {
       padding: 50px; }
 
 /*zona para video de proyectos*/
-.proyectos {
+.Proyecto1 {
   background-color: #c2c2c2;
-  padding: 50px;
-  display: flex; }
-  .proyectos .videooo {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .Proyecto1 .videooo {
     display: flex;
     align-items: center;
+    justify-content: center; }
+  .Proyecto1 .proyecto1 {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-left: 40px; }
-  .proyectos .proyecto1 {
-    padding-top: 30px; }
-    .proyectos .proyecto1 .titproyecto1 {
+    align-items: center;
+    padding: 15px; }
+    .Proyecto1 .proyecto1 .titproyecto1 {
       display: flex;
       justify-content: center; }
-    .proyectos .proyecto1 .contproyecto1 {
+    .Proyecto1 .proyecto1 .contproyecto1 {
       display: flex;
       justify-content: center;
       text-align: justify;
       padding-top: 30px; }
 
-.newsletter {
-  padding: 40px; }
+.Proyecto2 {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .Proyecto2 .imagenec {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .Proyecto2 .proyecto2 {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px; }
+    .Proyecto2 .proyecto2 .titproyecto2 {
+      display: flex;
+      justify-content: center; }
+    .Proyecto2 .proyecto2 .contproyecto2 {
+      display: flex;
+      justify-content: center;
+      text-align: justify;
+      padding-top: 30px; }
 
 @media (min-width: 500px) {
   .grillacontenido {
     display: grid;
     grid-template-areas: "imagencontenido" "mision";
-    grid-template-columns: 1fr; }
-  .grillanewsletter {
-    display: grid;
-    grid-template-areas: "suscripcion suscripcion" "nombres correos";
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr; } }
 
 @media (min-width: 768px) {
   .grillacontenido {
     display: grid;
     grid-template-areas: "mision imagencontenido";
-    grid-template-columns: 1fr 1fr; }
-  .grillanewsletter {
+    grid-template-columns: 1fr 1fr; } }
+
+/*zona destinada a footer*/
+@media (min-width: 500px) {
+  .grillafooter {
     display: grid;
-    grid-template-areas: "suscripcion formulario";
-    grid-template-columns: 2fr 2fr; } }
+    grid-template-areas: "newsletter" "redes";
+    grid-template-columns: 1fr; } }
+
+@media (min-width: 768px) {
+  .grillafooter {
+    display: grid;
+    grid-template-areas: "redes newsletter";
+    grid-template-columns: 1fr 1fr; } }
 
 /*Tamaños de quienes somos*/
 @media (min-width: 500px) {
@@ -333,10 +391,18 @@ footer {
   .grillaproyecto1 {
     display: grid;
     grid-template-areas: "videooo" "proyecto1";
+    grid-template-columns: 1fr; }
+  .grillaproyecto2 {
+    display: grid;
+    grid-template-areas: "videoooo" "proyecto2";
     grid-template-columns: 1fr; } }
 
 @media (min-width: 768px) {
   .grillaproyecto1 {
     display: grid;
     grid-template-areas: "proyecto1 videooo";
+    grid-template-columns: 3fr 2fr; }
+  .grillaproyecto2 {
+    display: grid;
+    grid-template-areas: "videoooo proyecto2";
     grid-template-columns: 1fr 1fr; } }

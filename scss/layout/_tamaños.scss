@@ -1,7 +1,5 @@
 
-.newsletter{
-    padding: 40px;
-}
+ 
 
 @media (min-width:500px){
     .grillacontenido{
@@ -11,13 +9,7 @@
         "mision";
         grid-template-columns: 1fr;
     }
-    .grillanewsletter{
-        display: grid;
-        grid-template-areas: 
-        "suscripcion suscripcion"
-        "nombres correos";
-        grid-template-columns: 1fr 1fr;
-    }
+    
 }
 @media (min-width:768px){
     .grillacontenido{
@@ -26,12 +18,27 @@
         "mision imagencontenido";
         grid-template-columns: 1fr 1fr;
     }
-    .grillanewsletter{
+    
+}
+/*zona destinada a footer*/
+@media (min-width:500px){
+    .grillafooter{
         display: grid;
         grid-template-areas: 
-        "suscripcion formulario";
-        grid-template-columns: 2fr 2fr;
+        "newsletter"
+        "redes";
+        grid-template-columns: 1fr;
     }
+    
+}
+@media (min-width:768px){
+    .grillafooter{
+        display: grid;
+        grid-template-areas: 
+        "redes newsletter";
+        grid-template-columns: 1fr 1fr;
+    }
+    
 }
 /*Tamaños de quienes somos*/
 @media (min-width:500px){
@@ -79,12 +86,25 @@
         "proyecto1";
         grid-template-columns: 1fr;
     }
+    .grillaproyecto2{
+        display: grid;
+        grid-template-areas: 
+        "videoooo"
+        "proyecto2";
+        grid-template-columns: 1fr;
+    }
 }
 @media (min-width:768px){
     .grillaproyecto1{
         display: grid;
         grid-template-areas: 
         "proyecto1 videooo";
+        grid-template-columns: 3fr 2fr;
+    }
+    .grillaproyecto2{
+        display: grid;
+        grid-template-areas: 
+        "videoooo proyecto2";
         grid-template-columns: 1fr 1fr;
     }
 }

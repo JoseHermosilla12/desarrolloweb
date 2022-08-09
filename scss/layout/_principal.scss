@@ -8,17 +8,7 @@
 header{
     width: 100%;
 }
-.navegacion{
-    /*display: flex;*/
-    .titulo{
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 50px;
-        padding-left: 50px;
-    }
-}
+
 
 .imagen{
 	-webkit-animation: kenburns-bottom-right 5s ease-out both;
@@ -55,27 +45,21 @@ header{
 .contenido{
     display: flex;
     background-color: #e0e0e0;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     .imagencontenido{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-left: 40px;       
+        /*padding-left: 40px; */      
     }
-}
-.contenido{
-    display: flex;
-    background-color: #e0e0e0;
-    padding: 20px;
+    .Mision{
+        padding: 20px;
+    }
     .titmision{
         display: flex;
         justify-content: center;
     }
-}
-.contenido{
-    display: flex;
-    background-color: #e0e0e0;
-    padding: 20px;
     .contmision{
         display: flex;
         justify-content: center;
@@ -83,6 +67,7 @@ header{
         padding-top: 30px;
     }
 }
+
 .video{
     display: flex;
     justify-content: center;
@@ -90,34 +75,59 @@ header{
     padding: 20px;
     background-color: $paravideo;
 }
-.newsletter{
-    display: grid;
-}
-.formulario{
-    display: flex;
-}
+
+/*zona destinada a footer*/
+
+
 footer{
     background-color: $parafooter;
     .redes{
         list-style-type: none;
-        padding: 0px;        
+        margin-top: 20px;     
         font-size: small;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        flex-direction: column-reverse;
+        flex-direction: column;
         .logos{
-            padding: 25px;        
-            font-size: small;
+            padding: 15px;        
             display: flex;
             justify-content: space-around;
-            align-items: center;
-            flex-direction: row;
-            margin-top: 15px;
+            /*flex-direction: row;*/
+            
+        }
+        .prelogos{
+            display: flex;
+            .nombrenfooter{
+                padding-top: 20px;
+                padding-left: 15px;
+            }
         }
         }
 }
+.newsletter{
+    padding: 40px;
+    .suscripcion{
+        display: flex;
+        justify-content: center;
+    }
+    .formulario{
+        display: flex;
+        align-items: center;
+    }
+}
 
+hr{
+    color: rgb(45, 239, 242);
+    
+}
+.enlaces{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: 10px;
+}
 /*Zona dedicada a quienes somos*/
 .nosotros{
     background-color: #e0e0e0;
@@ -140,9 +150,19 @@ footer{
 /*zona dedicada a contacto*/
 .contacto{
     background-color: white;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .ubicacion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .indicaciones{
         padding-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         .titulocontacto{
             display: flex;
             justify-content: center;
@@ -156,23 +176,54 @@ footer{
 
 /*zona para video de proyectos*/
 
-.proyectos{
+.Proyecto1{
     background-color: $paravideo;
-    padding: 50px;
-    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
     .videooo{
         display: flex;
         align-items: center;
-        justify-content: center;
-        padding-left: 40px;       
+        justify-content: center;           
     }
     .proyecto1{
         padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
         .titproyecto1{
             display: flex;
             justify-content: center;
         }
         .contproyecto1{
+            display: flex;
+            justify-content: center;
+            text-align: justify;
+            padding-top: 30px;
+        }
+    }
+}
+.Proyecto2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .imagenec{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .proyecto2{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        .titproyecto2{
+            display: flex;
+            justify-content: center;
+        }
+        .contproyecto2{
             display: flex;
             justify-content: center;
             text-align: justify;

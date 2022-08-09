@@ -5,19 +5,19 @@
 .Mision{
     grid-area: mision;
 }
-/*Grids de suscripcion*/
-.suscripcion{
-    grid-area: suscripcion;
+/*zona dedicada a video*/
+.Videoinge{
+    grid-area: videoinge;
 }
+/*Grids de suscripcion*/
+
 .nombres{
     grid-area: nombres;
 }
 .correos{
     grid-area: correos;
 }
-.formulario{
-    grid-area: formulario;
-}
+
 /*Zona de grids quienes somos*/
 .sobrenosotros{
     grid-area: sobrenosotros;
@@ -40,4 +40,17 @@
 }
 .proyecto1{
     grid-area: proyecto1;
+}
+.videoooo{
+    grid-area: videoooo;
+}
+.proyecto2{
+    grid-area: proyecto2;
+}
+/*zona destinada a footer*/
+.redes{
+    grid-area: redes;
+}
+.newsletter{
+    grid-area: newsletter;
 }
