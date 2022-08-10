@@ -232,4 +232,32 @@ hr{
     }
 }
 
+/*zona dedicada a socio*/
+.form3{
+    background-color: $paravideo;
+}
+.motivacion{
+    padding: 20px;
+    background-color: #e0e0e0;
+    .imagenmotivacion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .misionmotivacion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .textomotivacion{
+            text-align: justify;
+        }
+    }
+}
+
+/*zona dedicada a contacto*/
+.paracontacto{
+    width: 80%;
+    padding-left: 40px;
+}
 

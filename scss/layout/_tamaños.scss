@@ -108,3 +108,22 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+
+/*zona de socio y motivacion*/
+@media (min-width:500px){
+    .grillasocio{
+        display: grid;
+        grid-template-areas: 
+        "videooo"
+        "proyecto1";
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width:768px){
+    .grillasocio{
+        display: grid;
+        grid-template-areas: 
+        "imagenmotivacion misionmotivacion";
+        grid-template-columns: 1fr 1fr;
+    }
+}

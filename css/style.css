@@ -72,6 +72,13 @@
 .newsletter {
   grid-area: newsletter; }
 
+/*zona destinada a motivacion*/
+.imagenmotivacion {
+  grid-area: imagenmotivacion; }
+
+.misionmotivacion {
+  grid-area: misionmotivacion; }
+
 @media (min-width: 500px) {
   .grillacontenido {
     display: grid;
@@ -142,6 +149,19 @@
   .grillaproyecto2 {
     display: grid;
     grid-template-areas: "videoooo proyecto2";
+    grid-template-columns: 1fr 1fr; } }
+
+/*zona de socio y motivacion*/
+@media (min-width: 500px) {
+  .grillasocio {
+    display: grid;
+    grid-template-areas: "videooo" "proyecto1";
+    grid-template-columns: 1fr; } }
+
+@media (min-width: 768px) {
+  .grillasocio {
+    display: grid;
+    grid-template-areas: "imagenmotivacion misionmotivacion";
     grid-template-columns: 1fr 1fr; } }
 
 * {
@@ -335,6 +355,30 @@ hr {
       text-align: justify;
       padding-top: 30px; }
 
+/*zona dedicada a socio*/
+.form3 {
+  background-color: #c2c2c2; }
+
+.motivacion {
+  padding: 20px;
+  background-color: #e0e0e0; }
+  .motivacion .imagenmotivacion {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .motivacion .misionmotivacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .motivacion .misionmotivacion .textomotivacion {
+      text-align: justify; }
+
+/*zona dedicada a contacto*/
+.paracontacto {
+  width: 80%;
+  padding-left: 40px; }
+
 @media (min-width: 500px) {
   .grillacontenido {
     display: grid;
@@ -405,4 +449,17 @@ hr {
   .grillaproyecto2 {
     display: grid;
     grid-template-areas: "videoooo proyecto2";
+    grid-template-columns: 1fr 1fr; } }
+
+/*zona de socio y motivacion*/
+@media (min-width: 500px) {
+  .grillasocio {
+    display: grid;
+    grid-template-areas: "videooo" "proyecto1";
+    grid-template-columns: 1fr; } }
+
+@media (min-width: 768px) {
+  .grillasocio {
+    display: grid;
+    grid-template-areas: "imagenmotivacion misionmotivacion";
     grid-template-columns: 1fr 1fr; } }
