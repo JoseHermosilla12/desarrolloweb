@@ -172,33 +172,12 @@
 header {
   width: 100%; }
 
-.imagen {
-  -webkit-animation: kenburns-bottom-right 5s ease-out both;
-  animation: kenburns-bottom-right 5s ease-out both; }
-
-@-webkit-keyframes kenburns-bottom-right {
-  0% {
-    -webkit-transform: scale(1) translate(0, 0);
-    transform: scale(1) translate(0, 0);
-    -webkit-transform-origin: 84% 84%;
-    transform-origin: 84% 84%; }
-  100% {
-    -webkit-transform: scale(1.25) translate(20px, 15px);
-    transform: scale(1.25) translate(20px, 15px);
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom; } }
-
-@keyframes kenburns-bottom-right {
-  0% {
-    -webkit-transform: scale(1) translate(0, 0);
-    transform: scale(1) translate(0, 0);
-    -webkit-transform-origin: 84% 84%;
-    transform-origin: 84% 84%; }
-  100% {
-    -webkit-transform: scale(1.25) translate(20px, 15px);
-    transform: scale(1.25) translate(20px, 15px);
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom; } }
+.titulo {
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  width: 100%;
+  font-size: 40px; }
 
 .contenido {
   display: flex;
@@ -377,6 +356,25 @@ hr {
 /*zona dedicada a contacto*/
 .paracontacto {
   width: 80%;
+  padding-left: 40px; }
+
+.mmm {
+  display: block;
+  position: relative; }
+
+.hrcontacto {
+  color: #e0e0e0; }
+
+.contac1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #e0e0e0;
+  border: solid;
+  border-radius: 20px; }
+
+.contac2 {
   padding-left: 40px; }
 
 @media (min-width: 500px) {
